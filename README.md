@@ -28,6 +28,4 @@ This will fail because it does not know the custom library name.
 
 Access to the file ```example/index.html``` through a webserver.
 
-It tries to import the bundle through [SystemJs](https://github.com/systemjs/systemjs).
-
-If the dllplugin bundle was correct, you should answer to 2 alerts, but, for the second, you get an error in the console.
+If the bundle was correct, you should see a dialog.
