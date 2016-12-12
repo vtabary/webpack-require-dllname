@@ -10,9 +10,13 @@
         <script type="text/javascript" src="../node_modules/systemjs/dist/system.js"></script>
         <script>
           System.config({
-            baseURL: '.',
+            baseURL: '../',
             packages: {
-              '../dist': {
+              '../': {
+                defaultJSExtensions: 'js'
+              },
+              'mydll': {
+                main: '../dist/dll/main.dllplugin.js',
                 defaultJSExtensions: 'js'
               }
             },
@@ -22,7 +26,7 @@
               }
             },
           });
-          System.import('../dist/final/main.bundle');
+          System.import('dist/final/main.bundle');
         </script>
     </head>
     <body>
