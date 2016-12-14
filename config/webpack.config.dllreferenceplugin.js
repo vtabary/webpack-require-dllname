@@ -12,6 +12,12 @@ module.exports = webpackMerge(commonConfig, {
     'main':      ['./src/final/index']
   },
 
+  resolve: {
+    alias: {
+      'mydll': path.resolve(path.join(__dirname, '../src/dll/index.js'))
+    }
+  },
+
   plugins: [
     new webpack.DllReferencePlugin({
       context: '.',

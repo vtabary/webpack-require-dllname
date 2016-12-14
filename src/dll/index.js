@@ -1,5 +1,3 @@
-const Component = require('@angular/core').Component;
+const fetch = require('whatwg-fetch');
 
-module.exports = function test (name) {
-  alert(`Hello ${name} !`);
-};
+module.exports = require('./code');
